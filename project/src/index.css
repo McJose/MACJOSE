@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 dark:bg-primary dark:text-gray-50;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-20 px-4 md:px-8 max-w-7xl mx-auto;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-10 text-center;
+  }
+  
+  .button-primary {
+    @apply px-6 py-3 bg-accent text-white font-medium rounded-md hover:bg-accent-light transition-colors duration-300;
+  }
+  
+  .button-outline {
+    @apply px-6 py-3 border border-accent text-accent dark:text-accent-light font-medium rounded-md hover:bg-accent/10 transition-colors duration-300;
+  }
+  
+  .preloader-track {
+    @apply h-1 w-32 bg-gray-200 dark:bg-primary-light rounded-full overflow-hidden;
+  }
+  
+  .preloader-ball {
+    @apply h-full w-4 bg-accent rounded-full animate-preloader;
+  }
+  
+  .navbar-link {
+    @apply relative text-gray-600 dark:text-gray-300 hover:text-accent dark:hover:text-accent-light transition-colors duration-300 py-2;
+  }
+  
+  .navbar-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300;
+  }
+  
+  .navbar-link:hover::after {
+    @apply w-full;
+  }
+  
+  .navbar-link.active {
+    @apply text-accent dark:text-accent-light font-medium;
+  }
+  
+  .navbar-link.active::after {
+    @apply w-full;
+  }
+  
+  .skills-container {
+    @apply relative h-[600px] w-full md:h-[600px] md:w-[600px] mx-auto border border-gray-200 dark:border-primary-light rounded-full flex items-center justify-center;
+  }
+  
+  .skill-item {
+    @apply absolute w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-gray-200 dark:border-primary-light cursor-pointer transition-all duration-300;
+  }
+  
+  .skill-item.active {
+    @apply border-accent dark:border-accent;
+  }
+  
+  .skill-content {
+    @apply absolute scale-0 opacity-0 transition-all duration-500 bg-white dark:bg-primary-light p-6 rounded-lg shadow-lg max-w-xs;
+  }
+  
+  .skill-content.active {
+    @apply scale-100 opacity-100;
+  }
+  
+  .project-card {
+    @apply bg-gray-50 dark:bg-primary-light rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300;
+  }
+}
