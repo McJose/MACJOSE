@@ -96,9 +96,7 @@ const Footer: React.FC = () => {
         
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
           <p className="text-gray-600 dark:text-gray-400 flex items-center justify-center">
-            © {currentYear} Joseph Makau. Made with 
-            <Heart className="w-4 h-4 text-red-500 mx-1" />
-            All rights reserved.
+            © {currentYear} Joseph Makau. All rights reserved.
           </p>
         </div>
       </div>

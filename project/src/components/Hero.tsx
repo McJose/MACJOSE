@@ -5,14 +5,28 @@ import { ChevronDown, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 pb-0 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
+      <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center pl-16 md:pl-32"
+        >
+          <div className="relative w-64 h-64 mx-auto mb-8">
+            <div className="absolute inset-0 rounded-full border-4 border-accent dark:border-accent bg-gray-50 dark:bg-gray-800"></div>
+            <img
+              src="../Joseph.jpg"
+              alt="Joseph Makau"
+              className="relative w-full h-full rounded-full object-cover"
+            />
+          </div>
+        </motion.div>
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-32 items-center relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-center md:text-left"
         >
-
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             <span className="block">Hi, I'm</span>
             <span className="text-accent">Joseph Makau</span>
@@ -68,6 +82,8 @@ const Hero: React.FC = () => {
             </a>
           </div>
         </motion.div>
+        
+        
         
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
