@@ -91,10 +91,10 @@ export const skillItems: SkillItem[] = [
 export const projectItems: ProjectItem[] = [
   {
     id: 'project-1',
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce platform with user authentication, product catalog, cart functionality, and payment processing.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    image: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Digital Attachment tracking and Evaluation system',
+    description: 'A full-featured  system with student and lecturer authentication, attachment tracking, and evaluation processing.',
+    technologies: ['Laravel', 'Node.js', 'MySQL', 'PHP', 'JavaScript'],
+    image: '',
     demoUrl: '#',
     repoUrl: '#',
   },
@@ -109,11 +109,11 @@ export const projectItems: ProjectItem[] = [
   },
   {
     id: 'project-3',
-    title: 'Project Management System',
-    description: 'A comprehensive project management system with task tracking, team collaboration, and reporting features.',
-    technologies: ['Laravel', 'MySQL', 'Vue.js', 'TailwindCSS'],
-    image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    demoUrl: '#',
+    title: 'Portfolio',
+    description: 'A portfolio website to showcase my skills and projects.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    image: '../Portfolio1.png',
+    demoUrl: 'https://mcjose.github.io/Portfolio.html',
     repoUrl: '#',
   },
   {

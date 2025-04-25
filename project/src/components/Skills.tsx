@@ -96,10 +96,10 @@ const Skills: React.FC = () => {
           );
         })}
         
-        {/* Center content - Your picture */}
+        {/* Center content*/}
         <div className="relative z-10 w-52 h-52 bg-white dark:bg-primary-light rounded-full shadow-lg">
           <img 
-            src="/path-to-your-picture.jpg" 
+            src="/Joseph.jpg" 
             alt="Joseph Makau" 
             className="w-full h-full rounded-full object-cover"
           />

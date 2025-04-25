@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
     >
       <div className="px-4 md:px-8 max-w-7xl mx-auto flex justify-between items-center">
         <a href="#home" className="text-xl font-bold">
-          <span className="text-gray-900 dark:text-white">Dev</span>
+          <span className="text-gray-900 dark:text-white">Jose</span>
           <span className="text-accent">Portfolio</span>
         </a>
         

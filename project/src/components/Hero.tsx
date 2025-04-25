@@ -5,7 +5,7 @@ import { ChevronDown, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 pb-0 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             <span className="block">Hi, I'm</span>
-            <span className="text-accent">Joseph</span>
+            <span className="text-accent">Joseph Makau</span>
           </h1>
           
           <h2 className="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-300 mb-6">
@@ -72,8 +72,17 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="hidden md:block"
+          className="hidden md:block relative"
         >
+          <img 
+            src="../Jose.png" 
+            alt="Joseph Makau" 
+            className="w-64 h-auto absolute left-0 top-1/2 transform -translate-y-1/2"
+            style={{
+              mixBlendMode: 'multiply',
+              filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))'
+            }}
+          />
           <div className="relative">
             <div className="absolute inset-0 bg-accent/20 rounded-full blur-3xl"></div>
             <div className="relative bg-gray-100 dark:bg-primary-light p-8 rounded-lg shadow-lg border border-gray-200 dark:border-primary backdrop-blur-sm">
