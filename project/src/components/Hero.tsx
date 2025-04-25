@@ -12,6 +12,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="text-center md:text-left"
         >
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             <span className="block">Hi, I'm</span>
             <span className="text-accent">Joseph Makau</span>
@@ -74,15 +75,6 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="hidden md:block relative"
         >
-          <img 
-            src="../Jose.png" 
-            alt="Joseph Makau" 
-            className="w-64 h-auto absolute left-0 top-1/2 transform -translate-y-1/2"
-            style={{
-              mixBlendMode: 'multiply',
-              filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))'
-            }}
-          />
           <div className="relative">
             <div className="absolute inset-0 bg-accent/20 rounded-full blur-3xl"></div>
             <div className="relative bg-gray-100 dark:bg-primary-light p-8 rounded-lg shadow-lg border border-gray-200 dark:border-primary backdrop-blur-sm">
@@ -109,8 +101,7 @@ function Developer() {
       <h1>Hello World!</h1>
       <p>Welcome to my portfolio</p>
     </div>
-  );
-}`}
+  );`}
                 </code>
               </pre>
             </div>
