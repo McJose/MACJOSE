@@ -96,31 +96,68 @@ const Skills: React.FC = () => {
           );
         })}
         
-        {/* Center content */}
-        <div className="relative z-10 w-52 h-52 bg-white dark:bg-primary-light rounded-full flex items-center justify-center shadow-lg">
-          <div className="text-center p-6">
-            <h3 className="text-xl font-semibold mb-2">Skills</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Hover or tap on a skill to view details
-            </p>
-          </div>
+        {/* Center content - Your picture */}
+        <div className="relative z-10 w-52 h-52 bg-white dark:bg-primary-light rounded-full shadow-lg">
+          <img 
+            src="/path-to-your-picture.jpg" 
+            alt="Joseph Makau" 
+            className="w-full h-full rounded-full object-cover"
+          />
         </div>
         
-        {/* Skill detail cards */}
-        {skillItems.map((skill) => (
-          <div
-            key={skill.id}
-            className={`skill-content ${activeSkill === skill.id ? 'active' : ''}`}
-          >
-            <div className="flex items-center mb-4">
-              {getIconComponent(skill.icon)}
-              <h3 className="text-lg font-semibold ml-3">{skill.name}</h3>
-            </div>
-            <p className="text-gray-700 dark:text-gray-300">
-              {skill.description}
-            </p>
-          </div>
-        ))}
+        {/* Skill detail cards positioned outside the circle */}
+        {skillItems.map((skill) => {
+          const angle = (skill.position - 1) * (360 / skillItems.length);
+          const angleInRadians = (angle * Math.PI) / 180;
+          const radius = 350; // Slightly larger radius than the skill items
+          const x = radius * Math.cos(angleInRadians);
+          const y = radius * Math.sin(angleInRadians);
+          
+          return (
+            <motion.div
+              key={skill.id}
+              className={`skill-content ${activeSkill === skill.id ? 'active' : 'hidden'}`}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ 
+                opacity: activeSkill === skill.id ? 1 : 0, 
+                scale: activeSkill === skill.id ? 1 : 0.8 
+              }}
+              transition={{ duration: 0.3 }}
+              style={{
+                position: 'absolute',
+                left: `calc(50% + ${x}px)`,
+                top: `calc(50% + ${y}px)`,
+                transform: 'translate(-50%, -50%)',
+                zIndex: 10
+              }}
+            >
+              <div className="bg-white dark:bg-primary-light p-6 rounded-lg shadow-lg max-w-md">
+                <div className="flex items-center mb-4">
+                  {getIconComponent(skill.icon)}
+                  <h3 className="text-lg font-semibold ml-3">{skill.name}</h3>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300">
+                  {skill.description}
+                </p>
+              </div>
+              
+              {/* Line connecting skill to detail card */}
+              {activeSkill === skill.id && (
+                <motion.div
+                  className="absolute w-1 h-1 bg-accent rounded-full"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                  style={{
+                    left: `calc(50% + ${x}px)`,
+                    top: `calc(50% + ${y}px)`,
+                    transform: 'translate(-50%, -50%)',
+                  }}
+                />
+              )}
+            </motion.div>
+          );
+        })}
       </div>
     </section>
   );

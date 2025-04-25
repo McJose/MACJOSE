@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-2">
-              City, Country
+              Machakos, Kenya
             </p>
             <p className="text-gray-600 dark:text-gray-400 mb-2">
               josephmuema416@gmail.com

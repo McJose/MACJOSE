@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             <span className="block">Hi, I'm</span>
-            <span className="text-accent">YJoseph</span>
+            <span className="text-accent">Joseph</span>
           </h1>
           
           <h2 className="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-300 mb-6">

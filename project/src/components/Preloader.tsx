@@ -29,7 +29,7 @@ const Preloader: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="mb-8 text-2xl font-bold text-accent"
         >
-          <span className="text-gray-900 dark:text-white">Developer</span>
+          <span className="text-gray-900 dark:text-white">Joseph`s</span>
           <span className="text-accent">Portfolio</span>
         </motion.div>
         
@@ -43,7 +43,7 @@ const Preloader: React.FC = () => {
           transition={{ delay: 0.5, duration: 0.5 }}
           className="mt-4 text-sm text-gray-600 dark:text-gray-400"
         >
-          Loading amazing content...
+          Welcome to my space...
         </motion.p>
       </div>
     </motion.div>
