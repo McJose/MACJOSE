@@ -19,14 +19,14 @@ const Preloader: React.FC = () => {
     <motion.div
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.8 }}
       className="fixed inset-0 z-50 flex items-center justify-center bg-white dark:bg-primary"
     >
       <div className="flex flex-col items-center">
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.8 }}
           className="mb-8 text-2xl font-bold text-accent"
         >
           <span className="text-gray-900 dark:text-white">Joseph`s</span>

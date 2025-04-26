@@ -6,20 +6,13 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 pb-0 px-4 md:px-8">
       <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center pl-16 md:pl-32"
-        >
-          <div className="relative w-64 h-64 mx-auto mb-8">
-            <div className="absolute inset-0 rounded-full border-4 border-accent dark:border-accent bg-gray-50 dark:bg-gray-800"></div>
-            <img
-              src="../Joseph.jpg"
-              alt="Joseph Makau"
-              className="relative w-full h-full rounded-full object-cover"
-            />
-          </div>
-        </motion.div>
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-center pl-16 md:pl-32"
+      >
+        
+      </motion.div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-32 items-center relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -53,28 +46,28 @@ const Hero: React.FC = () => {
           
           <div className="mt-8 flex justify-center md:justify-start space-x-4">
             <a
-              href="#"
+              href="https://github.com/McJose"
               className="p-2 text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent transition-colors"
               aria-label="Github"
             >
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/joseph-muema-a076282bb/"
               className="p-2 text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://twitter.com/StubbornBlue"
               className="p-2 text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent transition-colors"
               aria-label="Twitter"
             >
               <Twitter className="w-6 h-6" />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:josephmuema416@gmail.com"
               className="p-2 text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent transition-colors"
               aria-label="Email"
             >
@@ -82,9 +75,7 @@ const Hero: React.FC = () => {
             </a>
           </div>
         </motion.div>
-        
-        
-        
+
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -129,7 +120,6 @@ function Developer() {
         href="#about"
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 p-2 text-accent hover:text-accent-dark transition-colors animate-bounce"
       >
-        <ChevronDown className="w-6 h-6" />
       </a>
     </section>
   );

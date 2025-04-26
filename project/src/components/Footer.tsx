@@ -19,28 +19,28 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://github.com/McJose"
                 className="text-gray-600 dark:text-gray-400 hover:text-accent transition-colors"
                 aria-label="Github"
               >
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/joseph-muema-a076282bb/"
                 className="text-gray-600 dark:text-gray-400 hover:text-accent transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/StubbornBlue"
                 className="text-gray-600 dark:text-gray-400 hover:text-accent transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:josephmuema416@gmail.com"
                 className="text-gray-600 dark:text-gray-400 hover:text-accent transition-colors"
                 aria-label="Email"
               >
